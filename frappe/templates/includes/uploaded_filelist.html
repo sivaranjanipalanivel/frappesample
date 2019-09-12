@@ -1,0 +1,53 @@
+{% if filelist %}
+<div class="divstl">
+	<ul>
+		{% for n in filelist %}
+<li>
+	<div class="row">
+		<div class="col-md-12">
+			{% if n.type=="image"%}
+			<img src="/assets/frappe/images/imgs.png" stytle="width: 45px !important;float:left;"/>
+			
+			{% else%}
+			<img src="/assets/frappe/images/txt1.png" stytle="width: 45px !important;float:left;"/>
+			{% endif%}
+			<span style=""><a href="{{n.file_url}}" target="_blank">{{n.file_name}}</a></span>
+		</div>
+			
+		<!-- <div  class="col-md-9"></div> -->
+	
+</div>
+</li>
+{% endfor %}
+</ul>
+</div>
+{% else %}
+<div class="divstl" style="overflow: hidden !important;">
+	<div class="row" style="margin-top: 240px;margin-left: 25px;margin-right: 25px;text-align: center;">
+	<span style="font-size: 18px;color: #525252;">Attachments not found!</span>
+</div>
+</div>
+{% endif %}
+<style type="text/css">
+	ul {
+  list-style-type: none;
+}
+img {
+   max-width: 10% !important;
+   padding: 5px;
+}
+.row{
+	padding: 10px;
+}
+.divstl{
+	height: 552px;
+    background-color: #fafafa;
+    border: #ededed solid 1px;
+    overflow: scroll;
+    border-radius: 5px;
+}
+}
+.modal-body{
+	width:1000px !important;
+}
+</style>

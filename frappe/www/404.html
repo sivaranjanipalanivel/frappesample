@@ -1,0 +1,109 @@
+{% extends layout_template %}
+
+{%- block title -%}{{_("Not Found")}}{%- endblock -%}
+
+{% block page_content %}
+<style>
+.hero-and-content {
+	background-color: #f5f7fa;
+}
+ 
+html, body {
+	background-color: #f5f7fa;
+}
+</style>
+
+<!-- <div class='page-card'>
+	<div class='page-card-head'>
+		<span class='indicator darkgrey'>{{_("Page Missing or Moved")}}</span>
+	</div>
+	<p>{{_("The page you are looking for is missing. This could be because it is moved or there is a typo in the link.")}}</p>
+	<div><a href='/' class='btn btn-primary btn-sm'>{{ _("Home") }}</a></div>
+</div>
+<p class='text-muted text-center small' style='margin-top: -20px;'>{{ _("Error Code: {0}").format('404') }}</p> -->
+
+<div class="container-fluid">
+	<div class="th-txt">
+		<div class="row">
+			<div class="col-md-12 col-xs-12 col-xs-12">
+                <div class="thank-you-page">
+                
+              <div class="centerdiv" style="
+    width: 510px;
+    margin: 30% auto;
+    text-align: center;
+">
+                    <h4 style="
+    margin-bottom: 35px;
+">Sorry! The page you were looking for could not be found.
+
+</h4>
+                <div>
+                    <a href="/" class="btn btn-default">Home</a>
+                        <a href="/contact-us" class="btn btn-warning">Contact us</a>
+                        
+                    </div>
+                </div>
+                
+			</div>
+		</div>
+	</div>
+</div>
+<style type="text/css">
+
+    .th-txt{
+    	min-height: 400px;
+    	background: #fff;
+    	margin: 20px;
+    	padding: 20px;
+    }
+    .title-text{
+    	font-weight: 300;
+    }
+    .title-sub-text{
+    	font-weight: 300;
+    }
+    .th-txt a.btn{
+    	border-radius: 0;
+    	padding: 8px 14px;
+    }
+    @media screen and  (min-width: 768px){
+    .thank-you-page
+    {
+
+    width: 570px;
+    margin: 0 auto;
+    float: none;
+    text-align: center;
+
+    }
+}
+@media screen and  (max-width: 767px){
+.th-txt {
+    min-height: 400px;
+    background: #fff;
+    margin: 0;
+    padding: 20px;
+    margin-top: 20px;
+}
+.centerdiv{
+	    width: 100% !important;
+    margin: 30% auto;
+    text-align: center;
+    line-height: 25px;
+}
+ .thank-you-page h4
+{
+	    line-height: 35px;
+}
+}
+</style>
+
+ 
+</div>
+<style>
+.hero-and-content {
+	background-color: #f5f7fa;
+}
+</style>
+{% endblock %}
